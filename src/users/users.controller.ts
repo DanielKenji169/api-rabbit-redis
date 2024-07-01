@@ -40,43 +40,7 @@ export class UsersController {
     return this.usersService.remove(+id);
   }
 
-  /*@Patch('rent/:id/:bookId')
-  async rent(
-    @Param('id', new ParseIntPipe) id:number,
-    @Param('bookId', new ParseIntPipe) bookId: number)
-    {
-      return this.usersService.rent(id, bookId)
-  }
-
-
   
-  @Patch('rent/:userId/:bookId')
-  async connectBookToUser(
-    @Param('userId', new ParseIntPipe) userId: number,
-    @Param('bookId', new ParseIntPipe) bookId: number,
-    @Body() UpdateBookDto: UpdateBookDto
-    
-  ) {
-    
-      await this.usersService.connectBooktoUser(userId, bookId);
-      await this.booksService.addRent(bookId);
-      await this.booksService.rent(bookId,true,UpdateBookDto);
-      
-      return { message: 'Book rented to user.' };
-    } 
-      
-    @Patch('disconnect/:userId/:bookId')
-    async disconnectBookToUser(
-      @Param('userId', new ParseIntPipe) userId: number,
-      @Param('bookId', new ParseIntPipe) bookId: number,
-    ) {
-      
-        await this.usersService.connectBooktoUser(userId, bookId);
-        await this.booksService.removeRent(bookId);
-        
-        return { message: 'User returned the book.' };
-    }
-*/
     }
   
 

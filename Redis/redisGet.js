@@ -4,21 +4,7 @@ const prisma = new PrismaClient();
 const redis = require('redis');
      const client = redis.createClient();
      client.connect();
-// async function test(){
-
-//     const redis = require('redis');
-//     const client = redis.createClient();
-//     client.connect();
-
-//     const result = await client.get("1");
-//     const parsedResult = JSON.parse(result);
-//     console.log(parsedResult);
-
-//     const parametro = parsedResult.title
-//     console.log(parametro)
-//     client.quit();
-// }
-// test();
+    console.log(parametro)
 
 async function loadDataToRedis() {
     try {
